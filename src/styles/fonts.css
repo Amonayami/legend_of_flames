@@ -1,0 +1,11 @@
+/* Luckiest Guy */
+@font-face {
+    font-family: 'Press Start 2P';
+    src: 
+      local('Press Start 2P'),
+      local('PressStart2P-Regular'),
+      url('../fonts/PressStart2P-Regular.woff2') format('woff2'),
+      url('../fonts/PressStart2P-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+  }

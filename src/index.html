@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legend of Flames</title>
+    <title>Legend Of Flames</title>
 </head>
-<body>
-    
+<body class="page">
+    <header class="header">
+        <h1 class="title">Legend Of Flames</h1>
+        <div class="game-menu">
+            <button type="button" class="button">profile</button>
+            <button type="button" class="button">quests</button>
+            <button type="button" class="button">achievements</button>
+            <button type="button" class="button">settings</button>
+        </div> 
+    </header>
+    <main class="game-zone">
+        <section class="combat-zone">
+          
+          <div class="enemy-container" id="enemy-zone">
+            <!-- тут будут темплейты врагов -->
+          </div>
+          
+          <div class="chest-wrap">
+            <div class="chest"></div>
+            <div class="key"></div>
+          </div>
+        </section>
+
+        <section class="character-menu">
+            <!-- Вкладки -->
+            <div class="tabs">
+              <button type="button" class="button tab active" data-tab="heroes">heroes</button>
+            </div>
+            <!-- Контент для каждой вкладки -->
+            <div class="tab-content active" id="heroes">
+                <ul class="heroes-list">
+                    <li class="heroes-list-item">
+                        <div class="hero-info">
+                          <h3 class="hero-name">Goblin</h3>
+                          <p class="hero-description">Goblin</p>
+                        </div>
+                        <button type="button" class="button">!</button>
+                        <button type="button" class="button">1 lvl</button>
+                      </li>  
+                </ul>
+            </div>
+          </section>
+    </main>
+    <footer class="footer">
+        <p class="developer">#2025 by Amonayami</p>
+        <p class="version">v0.0.0.005</p>
+    </footer>
+    <template id="enemy-template">
+        <h2 class="enemy-name"></h2>
+        <div class="hp-container">
+          <div class="hp-fill"></div>
+          <div class="hp-text"></div>
+        </div>
+        <div class="enemy">
+          <img class="enemy-image" src="" alt="">
+        </div>
+    </template>
 </body>
 </html>
