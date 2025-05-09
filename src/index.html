@@ -23,7 +23,6 @@
           </div>
           
         </section>
-
         <section class="character-menu">
             <!-- Вкладки -->
             <div class="tabs">
@@ -31,46 +30,61 @@
             </div>
             <!-- Контент для каждой вкладки -->
             <div class="tab-content hero active" id="hero">
-                <div class="hero-container">
-                  <h3 class="nickname">Amonayami</h3>
-                  <img class="hero-image" src="./images/heroes/human-male.jpg" alt="">
-                </div>
-
-                <div class="stats">
-                  <ul class="stats-list">
-                    <li class="stats-item" data-label="hp:"><span>10</span></li>
-                    <li class="stats-item" data-label="mp:"><span>10</span></li>
-                    <li class="stats-item" data-label="atk:"><span>10</span></li>
-                    <li class="stats-item" data-label="atk spd:"><span>10</span></li>
-                    <li class="stats-item" data-label="crit dmg:"><span>10</span></li>
-                    <li class="stats-item" data-label="chance crit:"><span>10</span></li>
-                    <li class="stats-item" data-label="skill power:"><span>10</span></li>
-                    <li class="stats-item" data-label="str:"><span>10</span></li>
-                    <li class="stats-item" data-label="int:"><span>10</span></li>
-                    <li class="stats-item" data-label="con:"><span>10</span></li>
-                    <li class="stats-item" data-label="men:"><span>10</span></li>
-                  </ul>
-                </div>
-
-                <div class="inventory">
-                  <div class="inventory-item"></div>
-                  <div class="inventory-item"></div>
-                  <div class="inventory-item"></div>
-                  <div class="inventory-item"></div>
-                  <div class="inventory-item"></div>
-                  <div class="inventory-item"></div>
-                  <div class="inventory-item"></div>
-                  <div class="inventory-item"></div>
-                  <div class="inventory-item"></div>
-                </div>
-
+                <!-- тут будут темплейты героя -->
             </div>
           </section>
     </main>
     <footer class="footer">
         <p class="developer">#2025 by Amonayami</p>
-        <p class="version">v0.0.0.005</p>
+        <p class="version">v0.0.0.007</p>
     </footer>
+
+    <div class="popup">
+      <div class="popup-registration">
+        <h2 class="title">Создание персонажа</h2>
+        <form class="form-registration">
+          <div class="select-container">
+            <label>Nickname:</label>
+            <input type="text">
+          </div>
+          <div class="select-container">
+            <label>Class:</label>
+            <select name="" id="">
+              <option value="human">Human</option>
+            </select>
+          </div>
+          <div class="select-container">
+            <label>Sex:</label>
+            <select name="" id="">
+              <option value="">Male</option>
+              <option value="">Female</option>
+            </select>
+          </div>
+            
+            
+        </form>
+        <div class="hero-preview">
+          <img class="image hero-preview-image" src="" alt="">
+          <div class="stats">
+            <ul class="stats-list">
+              <li class="stats-item" data-label="hp:"><span>0</span></li>
+              <li class="stats-item" data-label="mp:"><span>0</span></li>
+              <li class="stats-item" data-label="atk:"><span>0</span></li>
+              <li class="stats-item" data-label="atk spd:"><span>0</span></li>
+              <li class="stats-item" data-label="crit dmg:"><span>0</span></li>
+              <li class="stats-item" data-label="chance crit:"><span>0</span></li>
+              <li class="stats-item" data-label="skill power:"><span>0</span></li>
+              <li class="stats-item" data-label="str:"><span>0</span></li>
+              <li class="stats-item" data-label="int:"><span>0</span></li>
+              <li class="stats-item" data-label="con:"><span>0</span></li>
+              <li class="stats-item" data-label="men:"><span>0</span></li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="button">Создать персонажа</button>
+      </div>
+    </div>
+
     <template id="enemy-template">
         <h2 class="enemy-name"></h2>
         <div class="hp-container">
@@ -80,6 +94,46 @@
         <div class="enemy-image-container">
           <img class="enemy-image" src="" alt="">
         </div>
+    </template>
+
+    <template id="hero-template">
+      <div class="hero-container">
+        <h3 class="nickname">Amonayami</h3>
+        <img class="image hero-image" src="" alt="">
+      </div>
+      <div class="stats">
+        <ul class="stats-list">
+          <li class="stats-item" data-label="hp:"><span>0</span></li>
+          <li class="stats-item" data-label="mp:"><span>0</span></li>
+          <li class="stats-item" data-label="atk:"><span>0</span></li>
+          <li class="stats-item" data-label="atk spd:"><span>0</span></li>
+          <li class="stats-item" data-label="crit dmg:"><span>0</span></li>
+          <li class="stats-item" data-label="chance crit:"><span>0</span></li>
+          <li class="stats-item" data-label="skill power:"><span>0</span></li>
+          <li class="stats-item" data-label="str:"><span>0</span></li>
+          <li class="stats-item" data-label="int:"><span>0</span></li>
+          <li class="stats-item" data-label="con:"><span>0</span></li>
+          <li class="stats-item" data-label="men:"><span>0</span></li>
+        </ul>
+      </div>
+      <div class="inventory">
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+        <div class="inventory-item"></div>
+      </div>
     </template>
 </body>
 </html>

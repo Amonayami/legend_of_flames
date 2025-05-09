@@ -20,8 +20,6 @@
     border-radius: 10px;
     border-start-start-radius: 0;
     border: 1px solid #000;
-    min-height: 255px;
-    min-width: 610px;
 }
 
 .tab-content.active {

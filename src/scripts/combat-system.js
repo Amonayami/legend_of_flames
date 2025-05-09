@@ -1,4 +1,4 @@
-import { enemys } from './database'
+import {enemys} from './database'
 
 const enemyZone = document.getElementById('enemy-zone')
 const enemyTemplate = document.getElementById('enemy-template')
@@ -7,7 +7,7 @@ export function spawnRandomEnemy() {
     enemyZone.innerHTML = ''
     const randomEnemy = enemys[Math.floor(Math.random() * enemys.length)]
     const element = enemyTemplate.content.cloneNode(true)
-    const enemyName = element.querySelector('.enemy-name');
+    const enemyName = element.querySelector('.enemy-name')
     const enemyImage = element.querySelector('.enemy-image-container .enemy-image')
     const hpFill = element.querySelector('.hp-container .hp-fill')
     const hpText = element.querySelector('.hp-container .hp-text')

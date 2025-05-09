@@ -1,69 +1,69 @@
 export const enemys = [
 {
-    id: 'E0001',
+    id: '20001',
     name: 'Rabbit',
     hp: 100,
-    image: require('../images/enemy/forest/E0001_rabbit.webp')
+    image: require('../images/enemy/forest/20001_rabbit.webp')
 },
 {
-    id: 'E0002',
+    id: '20002',
     name: 'Raven',
     hp: 100,
-    image: require('../images/enemy/forest/E0002_raven.webp')
+    image: require('../images/enemy/forest/20002_raven.webp')
 },
 {
-    id: 'E0003',
+    id: '20003',
     name: 'Squirrel',
     hp: 100,
-    image: require('../images/enemy/forest/E0003_squirrel.webp')
+    image: require('../images/enemy/forest/20003_squirrel.webp')
 },
 {
-    id: 'E0004',
+    id: '20004',
     name: 'Pig',
     hp: 100,
-    image: require('../images/enemy/forest/E0004_pig.webp')
+    image: require('../images/enemy/forest/20004_pig.webp')
 },
 {
-    id: 'E0005',
+    id: '20005',
     name: 'Hog',
     hp: 100,
-    image: require('../images/enemy/forest/E0005_hog.webp')
+    image: require('../images/enemy/forest/20005_hog.webp')
 },
 {
-    id: 'E0006',
+    id: '20006',
     name: 'Fox',
     hp: 100,
-    image: require('../images/enemy/forest/E0006_fox.webp')
+    image: require('../images/enemy/forest/20006_fox.webp')
 },
 {
-    id: 'E0007',
+    id: '20007',
     name: 'Wolf',
     hp: 100,
-    image: require('../images/enemy/forest/E0007_wolf.webp')
+    image: require('../images/enemy/forest/20007_wolf.webp')
 },
 {
-    id: 'E0008',
+    id: '20008',
     name: 'Bear',
     hp: 100,
-    image: require('../images/enemy/forest/E0008_bear.webp')
+    image: require('../images/enemy/forest/20008_bear.webp')
 },
 {
-    id: 'E0009',
+    id: '20009',
     name: 'Spider',
     hp: 100,
-    image: require('../images/enemy/forest/E0009_spider.webp')
+    image: require('../images/enemy/forest/20009_spider.webp')
 },
 {
-    id: 'E0010',
+    id: '20010',
     name: 'Hunter',
     hp: 100,
-    image: require('../images/enemy/forest/E0010_hunter.webp')
+    image: require('../images/enemy/forest/20010_hunter.webp')
 },
 {
-    id: 'E0011',
+    id: '20011',
     name: 'Forest-Robber',
     hp: 100,
-    image: require('../images/enemy/forest/E0011_forest-robber.webp')
+    image: require('../images/enemy/forest/20011_forest-robber.webp')
 }
 ]
 
@@ -160,5 +160,40 @@ const keys = [
     id: 'K0009',
     name: 'Rainbow-key',
     image: '../images/keys/K0009_rainbow-key.webp'
+}
+]
+
+export const heroes = [
+{
+    id: '10001',
+    name: 'human-male',
+    image: require('../images/heroes/human/10001_human_male.webp'),
+    hp: 0,
+    mp: 0,
+    atk: 0,
+    atk_spd: 0,
+    crit_dmg: 0,
+    chance_crit: 0,
+    skill_power: 0,
+    str: 0,
+    int: 0,
+    con: 0,
+    men: 0
+},
+{
+    id: '10002',
+    name: 'human-female',
+    image: require('../images/heroes/human/10002_human_female.webp'),
+    hp: 0,
+    mp: 0,
+    atk: 0,
+    atk_spd: 0,
+    crit_dmg: 0,
+    chance_crit: 0,
+    skill_power: 0,
+    str: 0,
+    int: 0,
+    con: 0,
+    men: 0
 }
 ]
