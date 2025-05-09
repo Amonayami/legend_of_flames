@@ -22,29 +22,48 @@
             <!-- тут будут темплейты врагов -->
           </div>
           
-          <div class="chest-wrap">
-            <div class="chest"></div>
-            <div class="key"></div>
-          </div>
         </section>
 
         <section class="character-menu">
             <!-- Вкладки -->
             <div class="tabs">
-              <button type="button" class="button tab active" data-tab="heroes">heroes</button>
+              <button type="button" class="button tab active" data-tab="hero">hero</button>
             </div>
             <!-- Контент для каждой вкладки -->
-            <div class="tab-content active" id="heroes">
-                <ul class="heroes-list">
-                    <li class="heroes-list-item">
-                        <div class="hero-info">
-                          <h3 class="hero-name">Goblin</h3>
-                          <p class="hero-description">Goblin</p>
-                        </div>
-                        <button type="button" class="button">!</button>
-                        <button type="button" class="button">1 lvl</button>
-                      </li>  
-                </ul>
+            <div class="tab-content hero active" id="hero">
+                <div class="hero-container">
+                  <h3 class="nickname">Amonayami</h3>
+                  <img class="hero-image" src="./images/heroes/human-male.jpg" alt="">
+                </div>
+
+                <div class="stats">
+                  <ul class="stats-list">
+                    <li class="stats-item" data-label="hp:"><span>10</span></li>
+                    <li class="stats-item" data-label="mp:"><span>10</span></li>
+                    <li class="stats-item" data-label="atk:"><span>10</span></li>
+                    <li class="stats-item" data-label="atk spd:"><span>10</span></li>
+                    <li class="stats-item" data-label="crit dmg:"><span>10</span></li>
+                    <li class="stats-item" data-label="chance crit:"><span>10</span></li>
+                    <li class="stats-item" data-label="skill power:"><span>10</span></li>
+                    <li class="stats-item" data-label="str:"><span>10</span></li>
+                    <li class="stats-item" data-label="int:"><span>10</span></li>
+                    <li class="stats-item" data-label="con:"><span>10</span></li>
+                    <li class="stats-item" data-label="men:"><span>10</span></li>
+                  </ul>
+                </div>
+
+                <div class="inventory">
+                  <div class="inventory-item"></div>
+                  <div class="inventory-item"></div>
+                  <div class="inventory-item"></div>
+                  <div class="inventory-item"></div>
+                  <div class="inventory-item"></div>
+                  <div class="inventory-item"></div>
+                  <div class="inventory-item"></div>
+                  <div class="inventory-item"></div>
+                  <div class="inventory-item"></div>
+                </div>
+
             </div>
           </section>
     </main>
@@ -58,7 +77,7 @@
           <div class="hp-fill"></div>
           <div class="hp-text"></div>
         </div>
-        <div class="enemy">
+        <div class="enemy-image-container">
           <img class="enemy-image" src="" alt="">
         </div>
     </template>

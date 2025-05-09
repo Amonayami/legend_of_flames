@@ -1,0 +1,29 @@
+.tabs {
+    display: flex;
+    position: absolute;
+    top: -22px;
+    gap: 3px;
+}
+
+.tab {
+    border-end-start-radius: 0;
+    border-end-end-radius: 0;
+    border-bottom: none;
+}
+
+.tab.active {
+    background-color: #ccc;
+}
+
+.tab-content {
+    display: none;
+    border-radius: 10px;
+    border-start-start-radius: 0;
+    border: 1px solid #000;
+    min-height: 255px;
+    min-width: 610px;
+}
+
+.tab-content.active {
+    display: block;
+}
